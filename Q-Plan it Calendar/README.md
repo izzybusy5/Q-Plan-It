@@ -20,7 +20,9 @@ Welcome to the Q-PLAN It App! This project aims to create a user-friendly and in
 - Firestore for event data storage
 
 ## Installation
-
+1. Clone this repository: `git clone https://github.com/izzybusy5/Q-Plan-It.git`
+2. Open the Xcode project file: `cd Q-Plan it Calendar && open Q-Plan it Calendar.xcodeproj`
+4. Build and run the app in Xcode.
 
 ## Usage
 

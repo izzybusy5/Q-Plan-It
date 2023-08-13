@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D781BF622A87D84600CA18FD /* PlanItListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D781BF612A87D84600CA18FD /* PlanItListViewModel.swift */; };
+		D781BF642A87D89300CA18FD /* PlanItListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D781BF632A87D89300CA18FD /* PlanItListItemViewModel.swift */; };
+		D79163FA2A76D9300003AF6D /* Q_Plan_it_CalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79163F92A76D9300003AF6D /* Q_Plan_it_CalendarApp.swift */; };
+		D79163FC2A76D9300003AF6D /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79163FB2A76D9300003AF6D /* MainPageView.swift */; };
+		D79163FE2A76D9320003AF6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79163FD2A76D9320003AF6D /* Assets.xcassets */; };
+		D79164012A76D9320003AF6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79164002A76D9320003AF6D /* Preview Assets.xcassets */; };
+		D79164092A76DA200003AF6D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D79164082A76DA200003AF6D /* FirebaseAuth */; };
+		D791640B2A76DA200003AF6D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D791640A2A76DA200003AF6D /* FirebaseFirestore */; };
+		D791640D2A76DA200003AF6D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D791640C2A76DA200003AF6D /* FirebaseFirestoreSwift */; };
+		D79164112A76E1080003AF6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D79164102A76E1080003AF6D /* GoogleService-Info.plist */; };
+		D79164172A76EAB50003AF6D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79164162A76EAB50003AF6D /* ProfileView.swift */; };
+		D79164192A76EAFD0003AF6D /* PlanitItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79164182A76EAFD0003AF6D /* PlanitItemsView.swift */; };
+		D791641B2A76EB2C0003AF6D /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D791641A2A76EB2C0003AF6D /* NewItemView.swift */; };
+		D791641D2A76EB690003AF6D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D791641C2A76EB690003AF6D /* LoginView.swift */; };
+		D791641F2A76EB950003AF6D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D791641E2A76EB950003AF6D /* RegisterView.swift */; };
+		D79164212A76EBE90003AF6D /* PlanItItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79164202A76EBE90003AF6D /* PlanItItemListView.swift */; };
+		D79164232A76EC880003AF6D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79164222A76EC880003AF6D /* User.swift */; };
+		D79164252A76ECB30003AF6D /* PlanItItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79164242A76ECB30003AF6D /* PlanItItem.swift */; };
+		D79164272A76EF330003AF6D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79164262A76EF330003AF6D /* MainViewModel.swift */; };
+		D79164292A76EF540003AF6D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79164282A76EF540003AF6D /* ProfileViewModel.swift */; };
+		D791642D2A76EF850003AF6D /* NewItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D791642C2A76EF850003AF6D /* NewItemViewModel.swift */; };
+		D791642F2A76EFDC0003AF6D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D791642E2A76EFDC0003AF6D /* LoginViewModel.swift */; };
+		D79164312A76EFF30003AF6D /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79164302A76EFF30003AF6D /* RegisterViewModel.swift */; };
+		D79164352A7703760003AF6D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79164342A7703760003AF6D /* HeaderView.swift */; };
+		D79164372A7728830003AF6D /* QPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79164362A7728830003AF6D /* QPButton.swift */; };
+		D79164392A774E500003AF6D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79164382A774E500003AF6D /* Extensions.swift */; };
+		D791643E2A7991390003AF6D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D791643D2A7991390003AF6D /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D781BF612A87D84600CA18FD /* PlanItListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanItListViewModel.swift; sourceTree = "<group>"; };
+		D781BF632A87D89300CA18FD /* PlanItListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanItListItemViewModel.swift; sourceTree = "<group>"; };
+		D79163F62A76D9300003AF6D /* Q-Plan it Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Q-Plan it Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79163F92A76D9300003AF6D /* Q_Plan_it_CalendarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q_Plan_it_CalendarApp.swift; sourceTree = "<group>"; };
+		D79163FB2A76D9300003AF6D /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		D79163FD2A76D9320003AF6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D79164002A76D9320003AF6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D79164102A76E1080003AF6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D79164162A76EAB50003AF6D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D79164182A76EAFD0003AF6D /* PlanitItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanitItemsView.swift; sourceTree = "<group>"; };
+		D791641A2A76EB2C0003AF6D /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
+		D791641C2A76EB690003AF6D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D791641E2A76EB950003AF6D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		D79164202A76EBE90003AF6D /* PlanItItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanItItemListView.swift; sourceTree = "<group>"; };
+		D79164222A76EC880003AF6D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D79164242A76ECB30003AF6D /* PlanItItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanItItem.swift; sourceTree = "<group>"; };
+		D79164262A76EF330003AF6D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		D79164282A76EF540003AF6D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		D791642C2A76EF850003AF6D /* NewItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewModel.swift; sourceTree = "<group>"; };
+		D791642E2A76EFDC0003AF6D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D79164302A76EFF30003AF6D /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		D79164342A7703760003AF6D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D79164362A7728830003AF6D /* QPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QPButton.swift; sourceTree = "<group>"; };
+		D79164382A774E500003AF6D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D791643D2A7991390003AF6D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D7CB01952A8940D70091A74F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D79163F32A76D9300003AF6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79164092A76DA200003AF6D /* FirebaseAuth in Frameworks */,
+				D791640B2A76DA200003AF6D /* FirebaseFirestore in Frameworks */,
+				D791640D2A76DA200003AF6D /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D79163ED2A76D9300003AF6D = {
+			isa = PBXGroup;
+			children = (
+				D79163F82A76D9300003AF6D /* Q-Plan it Calendar */,
+				D79163F72A76D9300003AF6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D79163F72A76D9300003AF6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D79163F62A76D9300003AF6D /* Q-Plan it Calendar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D79163F82A76D9300003AF6D /* Q-Plan it Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				D79164152A76E80B0003AF6D /* ETC */,
+				D79164142A76E7F90003AF6D /* Models */,
+				D79164132A76E7880003AF6D /* ViewModels */,
+				D79164122A76E7430003AF6D /* Views */,
+				D79163FF2A76D9320003AF6D /* Preview Content */,
+				D7CB01952A8940D70091A74F /* README.md */,
+			);
+			path = "Q-Plan it Calendar";
+			sourceTree = "<group>";
+		};
+		D79163FF2A76D9320003AF6D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D79164002A76D9320003AF6D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D79164122A76E7430003AF6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D791641C2A76EB690003AF6D /* LoginView.swift */,
+				D79163FB2A76D9300003AF6D /* MainPageView.swift */,
+				D79164162A76EAB50003AF6D /* ProfileView.swift */,
+				D79164182A76EAFD0003AF6D /* PlanitItemsView.swift */,
+				D791641A2A76EB2C0003AF6D /* NewItemView.swift */,
+				D791641E2A76EB950003AF6D /* RegisterView.swift */,
+				D79164202A76EBE90003AF6D /* PlanItItemListView.swift */,
+				D79164342A7703760003AF6D /* HeaderView.swift */,
+				D79164362A7728830003AF6D /* QPButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D79164132A76E7880003AF6D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D79164262A76EF330003AF6D /* MainViewModel.swift */,
+				D79164282A76EF540003AF6D /* ProfileViewModel.swift */,
+				D791642C2A76EF850003AF6D /* NewItemViewModel.swift */,
+				D791642E2A76EFDC0003AF6D /* LoginViewModel.swift */,
+				D79164302A76EFF30003AF6D /* RegisterViewModel.swift */,
+				D781BF612A87D84600CA18FD /* PlanItListViewModel.swift */,
+				D781BF632A87D89300CA18FD /* PlanItListItemViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D79164142A76E7F90003AF6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D79164222A76EC880003AF6D /* User.swift */,
+				D79164242A76ECB30003AF6D /* PlanItItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D79164152A76E80B0003AF6D /* ETC */ = {
+			isa = PBXGroup;
+			children = (
+				D79164102A76E1080003AF6D /* GoogleService-Info.plist */,
+				D79163F92A76D9300003AF6D /* Q_Plan_it_CalendarApp.swift */,
+				D79163FD2A76D9320003AF6D /* Assets.xcassets */,
+				D79164382A774E500003AF6D /* Extensions.swift */,
+				D791643D2A7991390003AF6D /* Launch Screen.storyboard */,
+			);
+			path = ETC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D79163F52A76D9300003AF6D /* Q-Plan it Calendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D79164042A76D9320003AF6D /* Build configuration list for PBXNativeTarget "Q-Plan it Calendar" */;
+			buildPhases = (
+				D79163F22A76D9300003AF6D /* Sources */,
+				D79163F32A76D9300003AF6D /* Frameworks */,
+				D79163F42A76D9300003AF6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Q-Plan it Calendar";
+			packageProductDependencies = (
+				D79164082A76DA200003AF6D /* FirebaseAuth */,
+				D791640A2A76DA200003AF6D /* FirebaseFirestore */,
+				D791640C2A76DA200003AF6D /* FirebaseFirestoreSwift */,
+			);
+			productName = "Q-Plan it Calendar";
+			productReference = D79163F62A76D9300003AF6D /* Q-Plan it Calendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D79163EE2A76D9300003AF6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D79163F52A76D9300003AF6D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D79163F12A76D9300003AF6D /* Build configuration list for PBXProject "Q-Plan it Calendar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D79163ED2A76D9300003AF6D;
+			packageReferences = (
+				D79164072A76DA200003AF6D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = D79163F72A76D9300003AF6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D79163F52A76D9300003AF6D /* Q-Plan it Calendar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D79163F42A76D9300003AF6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79164012A76D9320003AF6D /* Preview Assets.xcassets in Resources */,
+				D79163FE2A76D9320003AF6D /* Assets.xcassets in Resources */,
+				D791643E2A7991390003AF6D /* Launch Screen.storyboard in Resources */,
+				D79164112A76E1080003AF6D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D79163F22A76D9300003AF6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79164352A7703760003AF6D /* HeaderView.swift in Sources */,
+				D791641D2A76EB690003AF6D /* LoginView.swift in Sources */,
+				D79164312A76EFF30003AF6D /* RegisterViewModel.swift in Sources */,
+				D79164212A76EBE90003AF6D /* PlanItItemListView.swift in Sources */,
+				D79164372A7728830003AF6D /* QPButton.swift in Sources */,
+				D79164272A76EF330003AF6D /* MainViewModel.swift in Sources */,
+				D79163FC2A76D9300003AF6D /* MainPageView.swift in Sources */,
+				D79164192A76EAFD0003AF6D /* PlanitItemsView.swift in Sources */,
+				D781BF642A87D89300CA18FD /* PlanItListItemViewModel.swift in Sources */,
+				D79164292A76EF540003AF6D /* ProfileViewModel.swift in Sources */,
+				D791641F2A76EB950003AF6D /* RegisterView.swift in Sources */,
+				D79164232A76EC880003AF6D /* User.swift in Sources */,
+				D79164172A76EAB50003AF6D /* ProfileView.swift in Sources */,
+				D791642F2A76EFDC0003AF6D /* LoginViewModel.swift in Sources */,
+				D79164392A774E500003AF6D /* Extensions.swift in Sources */,
+				D79163FA2A76D9300003AF6D /* Q_Plan_it_CalendarApp.swift in Sources */,
+				D781BF622A87D84600CA18FD /* PlanItListViewModel.swift in Sources */,
+				D79164252A76ECB30003AF6D /* PlanItItem.swift in Sources */,
+				D791641B2A76EB2C0003AF6D /* NewItemView.swift in Sources */,
+				D791642D2A76EF850003AF6D /* NewItemViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D79164022A76D9320003AF6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D79164032A76D9320003AF6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D79164052A76D9320003AF6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Q-Plan it Calendar/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Q-Plan It ";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.izzy.Q-Plan-it-Calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D79164062A76D9320003AF6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Q-Plan it Calendar/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Q-Plan It ";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.izzy.Q-Plan-it-Calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D79163F12A76D9300003AF6D /* Build configuration list for PBXProject "Q-Plan it Calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79164022A76D9320003AF6D /* Debug */,
+				D79164032A76D9320003AF6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D79164042A76D9320003AF6D /* Build configuration list for PBXNativeTarget "Q-Plan it Calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79164052A76D9320003AF6D /* Debug */,
+				D79164062A76D9320003AF6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D79164072A76DA200003AF6D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D79164082A76DA200003AF6D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D79164072A76DA200003AF6D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D791640A2A76DA200003AF6D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D79164072A76DA200003AF6D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D791640C2A76DA200003AF6D /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D79164072A76DA200003AF6D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D79163EE2A76D9300003AF6D /* Project object */;
+}
